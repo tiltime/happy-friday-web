@@ -12,6 +12,14 @@ angular.module('happyFridayWebApp', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/techtalk', {
+        templateUrl: 'views/techtalk.html',
+        controller: 'MainCtrl'
+      })
+      .when('/foodfinder', {
+        templateUrl: 'views/foodfinder.html',
+        controller: 'MainCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
